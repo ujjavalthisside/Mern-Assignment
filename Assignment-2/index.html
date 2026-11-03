@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student internship job</title>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <p>Student internship application .*Required</p>
+    <form id="applicationForm">
+        <fieldset>
+            <!--Personal Details-->
+            <legend>Personal Details</legend>
+        <label for="name"> Full name*</label>
+        <input type="text" id="name" placeholder="ujjaval shrivastav" required/>
+        
+        <label for="email">Email*</label>
+        <input type="email" id="email"  placeholder="ujjwal@example.com" required/>
+
+        <label for="pass">Password*</label>
+        <input type="password" id="pass" placeholder="********" required/>
+        
+        <label for="phone">Phone*</label>
+        <input id="phone"  type="tel" placeholder="80988776**" pattern="[0-9]{10}" required/>
+        
+        <label for="url">Portfolio URL*</label>
+        <input type="url" id="url" placeholder="https://example.com" required/>
+        
+        <label for="age">Age*</label>
+        
+        <input type="number" id="age" min="18" max="90" placeholder="18" required/>
+        
+
+       <p> Gender:*</p>
+        <input id="male" type="radio" name="gender" value="male" required> 
+        <label for="male">Male</label>
+        <input id="female" type="radio" name="gender" value="Female" required> 
+        <label for="female">Female</label>
+        <input id="other" type="radio" name="gender" value="other/prefer not to say" required>
+        <label for="other"> Other/Prefer not to say </label>
+
+</fieldset>
+<fieldset>
+    <!--Education-->
+    <legend>Education</legend>
+    <label for="course" >Course</label>
+    <select id="course" required>
+        <option value="">Select Course</option>
+        <option>Btech-Computer Science</option>
+    <option>BCA</option>
+    <option>MCA</option>
+    <option>BBA</option>
+
+
+    </select>
+    
+    <label for="city">Preferred City (datalist)</label>
+            <input type="text" id="city" list="cities" placeholder="Delhi">
+
+            <datalist id="cities">
+                <option value="Delhi">
+                <option value="Noida">
+                <option value="Mumbai">
+                <option value="Bangalore">
+                <option value="Lucknow">
+            </datalist>
+            
+            <p>Skills.*</p>
+            <input type="checkbox" id="html" value="HTML"/>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" value="CSS"/>
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" value="JavaScript"/>
+            <label for="js">JavaScript</label>
+
+</fieldset>
+<fieldset>
+    <legend>Upload & Extras</legend>
+    <label for="av">Available from</label>
+    <input type="date" id="av" placeholder="15/11/2026"/>
+    
+    <label for="time">Interview Time</label>
+    <input id="time" type="time" placeholder="10:30 pm"/>
+    
+    <label for="resume">Resume*</label>
+    <input id="resume" type="file" required/>
+    
+    <label for="stipend">Expected Monthly Stipend</label>
+    <input id="stipend" type="range" min="5000" max="20000" step="1000" value="10000"/>
+    
+    <label for="color">Favourite colour</label>
+    <input type="color" id="color" value="#176f70">
+    
+    <label for="reason">Why would you like to join?</label>
+    <textarea id="reason" rows="4" placeholder="Write your reason here"> </textarea>
+    
+
+
+</fieldset>
+<button type="submit"> Submit Application </button>
+<button type="reset">Reset</button>
+    </form>
+</body>
+</html>
