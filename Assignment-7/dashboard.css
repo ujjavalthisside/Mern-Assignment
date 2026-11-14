@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px auto 50px;
+    gap: 10px;
+    max-width: 950px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+header, footer {
+    background: #1b3b36;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+    font-size: 12px;
+}
+
+/* Navbar Links Styling */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/
+
+aside {
+    grid-area: sidebar;
+    background: #e2ede8;
+    padding: 15px;
+}
+
+aside h3 {
+    font-size: 14px;
+    margin-top: 0;
+    color: #1b3b36;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+aside li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+main {
+    grid-area: main;
+    background: white;
+    padding: 20px;
+}
+
+main h3 {
+    font-size: 15px;
+    margin-top: 0;
+    color: #333;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card-box {
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.card-box h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.card-box p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+}
+
+.activity-text {
+    margin-top: 25px;
+    color: #666;
+    font-size: 13px;
+}
